@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "tsx": "^4.19.2"
+  },
+  "dependencies": {
+    "reto-7": "file:"
   }
 }

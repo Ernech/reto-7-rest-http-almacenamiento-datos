@@ -87,3 +87,37 @@ unknowVar=1
 dynamicVar = unknowVar
 
 //let numericVar:number = unknowVar ERROR
+
+
+//UNIONES E INTERSECCIONES
+console.log("==============UNIONS - INTERSECTIONS==============");
+
+let myVariable: number|boolean;
+
+myVariable = 5
+console.log(`My variable number: ${myVariable}`);
+myVariable =true
+console.log(`My variable boolean: ${myVariable}`);
+
+//myVariable = "Hello"; <--- ERROR
+
+interface Employee {
+    employeeID: number;
+    name:string;
+    age: number;
+  }
+  interface Manager {
+    stockPlan: boolean;
+  }
+  type ManagementEmployee = Employee & Manager;
+  let newManager: ManagementEmployee = {
+      employeeID: 12345,
+      name:"John Doe",
+      age: 34,
+      stockPlan: true
+  };
+
+  console.log(`Employee ID: ${newManager.employeeID}`);
+  console.log(`Name: ${newManager.name}`);
+  console.log(`Age: ${newManager.age}`);
+  console.log(`Stock plan: ${newManager.stockPlan}`);

@@ -121,3 +121,32 @@ interface Employee {
   console.log(`Name: ${newManager.name}`);
   console.log(`Age: ${newManager.age}`);
   console.log(`Stock plan: ${newManager.stockPlan}`);
+
+//COLECCIONES
+console.log("==============COLECCIONES==============");
+
+//Arrays
+
+const numericArray:number[]=[1,2,3,4,5,6];
+for(let i=0;i<numericArray.length;i++){
+    console.log(numericArray[i]);
+}
+
+
+const stringArray:string[]=["Apple","Orange","Banana","Pineapple"];
+
+for(let i=0;i<stringArray.length;i++){
+    console.log(stringArray[i]);
+}
+
+//Objects
+
+const userObject = {
+    name:"John",
+    email:"john@mail.com",
+    age:30
+}
+
+console.log(userObject.name);
+console.log(userObject.email);
+console.log(userObject.age);
